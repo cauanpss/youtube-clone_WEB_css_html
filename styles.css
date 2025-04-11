@@ -244,3 +244,65 @@ main{
     grid-row:2/3;
 }
 
+/* -------------------main-divs------------------- */
+.video-player iframe{
+    border: 2px solid red;
+    margin-left: 90px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+
+
+.live-chat {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .live-chat__messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .live-chat__message {
+    background-color: #eee;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 80%;
+  }
+  
+  .live-chat__input-container {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  
+  .live-chat__input-container input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .live-chat__input-container button {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .live-chat__input-container button:hover {
+    background-color: #b00000;
+  }
