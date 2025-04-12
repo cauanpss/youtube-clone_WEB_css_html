@@ -2,6 +2,10 @@ body{
     background-color: black;
 }
 
+input:focus {
+    outline-color: blue;
+    box-shadow: 0 0 3px rgba(0, 0, 255, 0.5);
+}
 
 /* ----------------------NAVBAR--------------------- */
 .navbar{
@@ -252,21 +256,25 @@ main{
     border-radius: 15px;
 }
 
-
-
 .live-chat {
     display: flex;
     flex-direction: column;
     width: 350px;
     height: 500px;
-    border: 1px solid #ccc;
-    background-color: white;
+    border: 1px solid #636363;
+    background-color: black;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  .live-chat__messages {
+.live-chat-navbar{
+    display:flex;
+    border:1px solid red;
+
+}
+
+  .live-chat-messages {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
@@ -275,26 +283,30 @@ main{
     gap: 10px;
   }
   
-  .live-chat__message {
+  .live-chat-message {
     background-color: #eee;
     padding: 8px 12px;
     border-radius: 12px;
     max-width: 80%;
   }
   
-  .live-chat__input-container {
+  .live-chat-input-container {
     display: flex;
-    border-top: 1px solid #ccc;
+    width: 90px;
   }
   
-  .live-chat__input-container input {
-    flex: 1;
+  .live-chat-input-container input {
+    margin-left: 40px;
     border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     padding: 10px;
     font-size: 14px;
   }
   
-  .live-chat__input-container button {
+  .live-chat-input-container button {
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
     background-color: #cc0000;
     color: white;
     border: none;
@@ -303,6 +315,6 @@ main{
     font-weight: bold;
   }
   
-  .live-chat__input-container button:hover {
+  .live-chat-input-container button:hover {
     background-color: #b00000;
   }
