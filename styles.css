@@ -91,11 +91,10 @@ input:focus {
 }
 
 
-
 .navbar .actions{
     /* border: 2px solid red;     */
     display: flex;
-    height: 36px;
+        height: 36px;
 }
 
 .navbar-mic-btn {
@@ -250,16 +249,19 @@ main{
 
 /* -------------------main-divs------------------- */
 .video-player iframe{
-    border: 2px solid red;
-    margin-left: 90px;
-    margin-top: 30px;
+    /* border: 2px solid red; */
+    margin-left: 45px;
+    margin-top: 15px;
     border-radius: 15px;
 }
 
 .live-chat {
+    justify-self: end;
+    margin-top: 15px;
+    margin-right: 15px;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 400px;
     height: 500px;
     border: 1px solid #636363;
     background-color: black;
@@ -269,9 +271,40 @@ main{
   }
   
 .live-chat-navbar{
+    margin-top: 10px;
     display:flex;
-    border:1px solid red;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom:1px solid white ;
+    box-shadow: #eee;
+}
 
+.live-chat-navbar-actions{
+    color: white;
+    display: flex;
+    gap:10px;
+    font-size: 20px;
+}
+
+.live-chat-navbar-order{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    width: 120px;
+    height: 22px;
+    background-color: transparent;
+    justify-content: space-around;
+    border: none;
+}
+
+.live-chat-navbar-order  i{
+    background-color: transparent;
+}
+
+.live-chat-navbar-actions button{
+    color: white;
+    background-color: transparent;
+    border:none;
 }
 
   .live-chat-messages {
@@ -292,24 +325,31 @@ main{
   
   .live-chat-input-container {
     display: flex;
-    width: 90px;
-  }
-  
+    border-top: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
   .live-chat-input-container input {
-    margin-left: 40px;
     border: none;
+    width: 200px;
+    height: 13px;
+    border:2px solid white;
+    margin-left: 55px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 10px;
     font-size: 14px;
-  }
+
+}
   
   .live-chat-input-container button {
     border-top-right-radius:15px;
     border-bottom-right-radius:15px;
     background-color: #cc0000;
     color: white;
-    border: none;
+    border: 1px solid #cc0000;
     padding: 10px 15px;
     cursor: pointer;
     font-weight: bold;
