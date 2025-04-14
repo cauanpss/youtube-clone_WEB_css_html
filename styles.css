@@ -506,36 +506,32 @@ background-color: #3e3e3e;
     background-color: #3e3e3e;
 }  
   /* ---------------------------------------RESPONSIVIDADE------------------------- */
-@media (max-width: 1024px) {
-
-    .navbar-search-form {
-      width: 100%;
-      margin-left: 20px;
-    }
-  
-    .navbar-create-btn {
-      margin-left: 20px;
-    }
-  
+  @media (max-width: 1024px) {
     main {
-      grid-template-columns: 1fr; 
+      display: flex;
+      flex-direction: column;
     }
   
-    .live-chat {
+    .video-player,
+    .live-chat,
+    .video-footer {
       width: 100%;
-      margin-right: 0;
-      height: 400px;
+      margin: 0 auto;
     }
   
     .video-player iframe {
-      margin-left: 0;
+      margin: 15px 0;
       width: 100%;
     }
   
+    .live-chat {
+      height: 400px;
+    }
+  
     .video-footer {
-      margin-left: 0;
       flex-direction: column;
       align-items: flex-start;
+      padding: 10px;
     }
   
     .video-footer-description {
@@ -543,26 +539,9 @@ background-color: #3e3e3e;
     }
   }
   
-  /* Responsividade para telas menores que 768px */
   @media (max-width: 768px) {
-  
     .navbar {
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding: 0 10px;
-      height: auto;
-    }
-  
-    .navbar-search-form {
-      width: 100%;
-      margin: 10px 0;
-      justify-content: center;
-    }
-  
-    .navbar .actions {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 10px;
+      display: none;
     }
   
     .live-chat-input-container input {
@@ -570,15 +549,9 @@ background-color: #3e3e3e;
       width: 100px;
     }
   
-    .video-footer {
-      padding: 10px;
-    }
-  
     .video-footer-feedback {
       flex-wrap: wrap;
       gap: 5px;
     }
   }
-  
- 
   
